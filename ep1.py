@@ -24,16 +24,16 @@ The final line: if your score is out of scope e.g. more than 100; print "your sc
 # 65 to 74 --> B
 # 75 to 100 --> A
 
-guide_message = "Welcome:"
-print("Please type your name:")
-inp_name = input()
-print(guide_message, type(inp_name))
+guide_message = "Welcome: "
+
+inp_name = input("Please type your name: ")
+print(guide_message, inp_name)
 
 notice_message = "You got:"
 result = ['A', 'B', 'C', 'D', 'F']
-print("Please type your score here:")
 
-raw_score = input()
+
+raw_score = input("Please type your score here: ")
 score = int(raw_score)
 
 if 0 <= score < 50:
